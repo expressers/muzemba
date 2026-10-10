@@ -2,7 +2,7 @@ services:
   - type: web
     name: muzemba
     runtime: static
-    buildCommand: npm install -g bun && bun install --frozen-lockfile && bun run build
+    buildCommand: bun install --frozen-lockfile && bun run build
     staticPublishPath: ./dist
     headers:
       - path: /media/*
